@@ -1,0 +1,17 @@
+23:38:00.889 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:40:17.065 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:42:55.833 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:45:13.495 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:48:18.195 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:50:21.855 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:00:42.331 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:01:25.081 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
+01:06:10.333 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:07:09.010 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
+01:09:43.208 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:09:55.146 [JavaFX Application Thread] WARN  controller.MainHsmComponentViewController - Printing failed.
+01:10:06.462 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
+01:13:33.272 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:13:48.307 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
+01:15:58.207 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:16:12.551 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.

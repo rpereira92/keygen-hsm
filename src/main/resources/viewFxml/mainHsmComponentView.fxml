@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="216.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainHsmComponentViewController">
+   <children>
+      <Text layoutX="237.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HSM COMPONENT KEY" />
+      <Pane layoutX="37.0" layoutY="39.0" opacity="0.69" prefHeight="132.0" prefWidth="540.0">
+         <children>
+            <TextField fx:id="txtKC1" editable="false" layoutX="99.0" layoutY="33.0" prefHeight="25.0" prefWidth="300.0" />
+            <TextField fx:id="txtKCV1" editable="false" layoutX="443.0" layoutY="33.0" prefHeight="25.0" prefWidth="95.0" />
+            <Label layoutY="37.0" text="Key Component 1" />
+            <Label layoutX="414.0" layoutY="37.0" text="KCV" />
+            <Label layoutX="1.0" layoutY="64.0" />
+            <HBox id="pnTypesKey" alignment="BASELINE_CENTER" layoutX="110.0" layoutY="73.0" prefHeight="37.0" prefWidth="278.0">
+               <children>
+                  <RadioButton fx:id="radio3DES" mnemonicParsing="false" text="3DES" translateX="-30.0">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="grpTypeKey" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioDES" mnemonicParsing="false" text="DES" toggleGroup="$grpTypeKey" />
+                  <RadioButton fx:id="radioDESKeyBlock" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" text="3DES (KeyBlock)" toggleGroup="$grpTypeKey" translateX="30.0" HBox.hgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane layoutX="118.0" layoutY="147.0" prefHeight="55.0" prefWidth="363.0">
+         <children>
+            <Button fx:id="btnGenerateKey" layoutX="70.0" layoutY="15.0" mnemonicParsing="false" text="Generate" />
+            <Button fx:id="btnPrint" layoutX="194.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#printKey" prefHeight="25.0" prefWidth="75.0" text="Print" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
