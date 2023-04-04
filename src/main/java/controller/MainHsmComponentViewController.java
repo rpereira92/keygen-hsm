@@ -65,6 +65,7 @@ public class MainHsmComponentViewController implements Initializable {
 
     public void printKey(MouseEvent mouseEvent) {
         HSMEndpointThales hsmEndpointThales = new HSMEndpointThales();
+        //hsmEndpointThales.testarConexao();
         printService.printPanel(printPageController.getAllPanelContent());
     }
 

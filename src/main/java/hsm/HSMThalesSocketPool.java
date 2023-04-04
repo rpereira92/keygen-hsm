@@ -8,8 +8,14 @@ public class HSMThalesSocketPool extends HSMPool<PooledSocket> {
      HsmConfig hsmConfig;
 
      @PostConstruct
-     public void init() throws Exception {
-          carregarPropriedades();
+     public void init(){
+          try {
+               init(TipoHSM.HSMTHALES);
+               carregarPropriedades();
+          } catch (Exception e) {
+               e.printStackTrace();
+          }
+
      }
 
      @Override

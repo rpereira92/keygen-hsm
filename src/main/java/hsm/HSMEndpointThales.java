@@ -7,27 +7,26 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.Random;
 
 @Log4j2
-public class HSMEndpointThales{
+public class HSMEndpointThales implements HSMCommands {
 
      @Getter
-     private HSMThalesSocketPool pool;
+     private HsmSocketManager socketManager;
 
      public HSMEndpointThales(){
-          try {
-               pool.init();
-          } catch (Exception e) {
-               e.printStackTrace();
-          }
+          socketManager = new HsmSocketManager();
      }
 
 
-     public String enviarMensagem(String mensagemOut) {
+     private String enviarMensagem(String mensagemOut)  throws IOException{
+          Socket socket = socketManager.getSocket();
           StringBuilder mensagemRetorno = new StringBuilder();
-          try (PooledSocket newSocket = pool.get()) {
+
+          try{
                int byteLido;
 
                String numeroHeader = gerarNumeroAleatorio();
@@ -36,8 +35,8 @@ public class HSMEndpointThales{
 
                log.debug("Mensagem enviada: '{}'", mensagemOut);
 
-               PrintWriter writer = new PrintWriter(new OutputStreamWriter(newSocket.getOutputStream(), StandardCharsets.ISO_8859_1));
-               InputStreamReader inputStreamReader = new InputStreamReader(newSocket.getInputStream(), StandardCharsets.ISO_8859_1);
+               PrintWriter writer = new PrintWriter(new OutputStreamWriter(socket.getOutputStream(), StandardCharsets.ISO_8859_1));
+               InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream(), StandardCharsets.ISO_8859_1);
 
                while (inputStreamReader.ready()) {
                     inputStreamReader.read();
@@ -71,7 +70,7 @@ public class HSMEndpointThales{
           return mensagemRetorno.toString();
      }
 
-     public boolean testarConexao() {
+     public boolean testarConexao() throws IOException {
 
           String resultado = enviarMensagem("NO00");
 
@@ -112,4 +111,32 @@ public class HSMEndpointThales{
           return String.format("%04d", numeroHeaderFormatado);
      }
 
+     @Override
+     public void connect() {
+
+     }
+
+     @Override
+     public String generateRandomKey(EncryptionType type) {
+          return null;
+     }
+
+     @Override
+     public boolean testConnection() {
+          return false;
+     }
+
+     @Override
+     public void closeSocket() {
+
+     }
+
+     @Override
+     public String command2GenerateAComponent(KeyType keyType) {
+          return null;
+     }
+
+     public String getHsmInformations() {
+          return "";
+     }
 }

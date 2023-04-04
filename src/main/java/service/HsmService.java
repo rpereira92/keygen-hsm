@@ -1,39 +1,28 @@
 package service;
 
 import hsm.EncryptionType;
+import hsm.HSMEndpointThales;
 import hsm.HsmConfig;
+import hsm.HsmSocketManager;
 
 import java.util.Map;
 import java.util.Properties;
 
 public class HsmService {
 
-    Properties properties;
-    HsmConfig hsmConfig;
+    HSMEndpointThales hsmEndpointThales;
+
     public HsmService() {
-        loadHSMConfiguration();
-    }
-
-    private void loadHSMConfiguration(){
-
-    }
-
-
-    private void createConnection() {
-
-    }
-
-    private void closeConnection() {
-
+        HSMEndpointThales hsmEndpointThales = new HSMEndpointThales();
     }
 
     public Map<String, String> generateComponentKey(EncryptionType type) {
         return null;
     }
 
-    public static String getHsmInformations(){
-        String versao = "Versao";
-        return versao;
+    public String getHsmInformations(){
+        return "";
+        //TODO:
     }
 
 

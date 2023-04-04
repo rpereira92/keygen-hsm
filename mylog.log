@@ -43,3 +43,167 @@
 23:20:35.238 [JavaFX Application Thread] INFO  service.PrintService - Versao
 01:43:42.617 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
 01:44:03.211 [JavaFX Application Thread] WARN  service.PrintService - Impressão cancelada pelo usuário.
+01:45:47.278 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:50:01.085 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:50:13.325 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+01:52:51.444 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:52:55.011 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+01:53:07.357 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:53:15.775 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+01:53:27.669 [JavaFX Application Thread] WARN  service.PrintService - Impressão cancelada pelo usuário.
+01:57:45.441 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:57:53.671 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+01:58:10.694 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:58:18.049 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+01:59:56.838 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:00:02.164 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:00:41.721 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:00:47.009 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:02:04.133 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:02:24.579 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:03:00.442 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:03:06.557 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:03:06.572 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool de sockets iniciado com sucesso
+02:03:06.573 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool State:
+QtdIddle:     [0]
+QtdActive:    [0]
+UsoTotal:     [0]
+QtdDestruida: [0]
+02:03:44.671 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:03:47.969 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:03:47.982 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool de sockets iniciado com sucesso
+02:03:47.983 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool State:
+QtdIddle:     [0]
+QtdActive:    [0]
+UsoTotal:     [0]
+QtdDestruida: [0]
+02:03:52.377 [JavaFX Application Thread] WARN  service.PrintService - Impressão cancelada pelo usuário.
+02:04:46.607 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:04:56.776 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:05:14.261 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool de sockets iniciado com sucesso
+02:05:31.358 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool State:
+QtdIddle:     [0]
+QtdActive:    [0]
+UsoTotal:     [0]
+QtdDestruida: [0]
+02:06:08.617 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:06:17.573 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:06:20.667 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:06:20.681 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool de sockets iniciado com sucesso
+02:06:20.681 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool State:
+QtdIddle:     [0]
+QtdActive:    [0]
+UsoTotal:     [0]
+QtdDestruida: [0]
+02:06:20.683 [JavaFX Application Thread] ERROR hsm.HSMEndpointThales - long overflow
+java.lang.ArithmeticException: long overflow
+	at java.lang.Math.multiplyExact(Math.java:946) ~[?:?]
+	at java.time.Duration.toNanos(Duration.java:1248) ~[?:?]
+	at org.apache.commons.pool2.impl.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:929) ~[commons-pool2-2.11.1.jar:?]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:308) ~[commons-pool2-2.11.1.jar:?]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434) ~[commons-pool2-2.11.1.jar:?]
+	at hsm.HSMPool.get(HSMPool.java:128) ~[classes/:?]
+	at hsm.HSMEndpointThales.enviarMensagem(HSMEndpointThales.java:31) ~[classes/:?]
+	at hsm.HSMEndpointThales.testarConexao(HSMEndpointThales.java:77) ~[classes/:?]
+	at controller.MainHsmComponentViewController.printKey(MainHsmComponentViewController.java:68) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx-base-19-win.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx-fxml-19-win.jar:?]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852) ~[javafx-fxml-19-win.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724) ~[javafx-fxml-19-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-19-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-19-win.jar:?]
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3599) ~[javafx-graphics-19-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3903) ~[javafx-graphics-19-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1887) ~[javafx-graphics-19-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-19-win.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx-graphics-19-win.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+02:07:05.704 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+02:07:08.846 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Iniciando pool de sockets...
+02:07:08.862 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool de sockets iniciado com sucesso
+02:07:08.863 [JavaFX Application Thread] INFO  hsm.HSMPool - HSMTHALESPool - Pool State:
+QtdIddle:     [0]
+QtdActive:    [0]
+UsoTotal:     [0]
+QtdDestruida: [0]
+02:07:13.866 [JavaFX Application Thread] ERROR hsm.HSMEndpointThales - Timeout waiting for idle object, borrowMaxWaitDuration=PT5S
+java.util.NoSuchElementException: Timeout waiting for idle object, borrowMaxWaitDuration=PT5S
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:312) ~[commons-pool2-2.11.1.jar:?]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434) ~[commons-pool2-2.11.1.jar:?]
+	at hsm.HSMPool.get(HSMPool.java:128) ~[classes/:?]
+	at hsm.HSMEndpointThales.enviarMensagem(HSMEndpointThales.java:31) ~[classes/:?]
+	at hsm.HSMEndpointThales.testarConexao(HSMEndpointThales.java:77) ~[classes/:?]
+	at controller.MainHsmComponentViewController.printKey(MainHsmComponentViewController.java:68) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77) ~[javafx-base-19-win.jar:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84) ~[javafx-fxml-19-win.jar:?]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852) ~[javafx-fxml-19-win.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724) ~[javafx-fxml-19-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-19-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-19-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-19-win.jar:?]
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3599) ~[javafx-graphics-19-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3903) ~[javafx-graphics-19-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1887) ~[javafx-graphics-19-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2620) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-19-win.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-19-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx-graphics-19-win.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+02:23:19.085 [JavaFX Application Thread] WARN  service.PrintService - Impressão cancelada pelo usuário.

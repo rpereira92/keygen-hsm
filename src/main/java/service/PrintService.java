@@ -15,7 +15,7 @@ public class PrintService {
             if (job.printPage(job.getJobSettings().getPageLayout(), panel)) {
                 job.endJob();
                 log.info("Key Component and KCV printed successfully.");
-                log.info(HsmService.getHsmInformations());
+            //    log.info(HsmService.getHsmInformations());
             } else {
                 log.warn("Printing failed.");
             }
