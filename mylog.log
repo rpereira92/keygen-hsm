@@ -15,3 +15,31 @@
 01:13:48.307 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
 01:15:58.207 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
 01:16:12.551 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
+01:19:23.834 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:20:26.640 [JavaFX Application Thread] INFO  controller.MainHsmComponentViewController - Key Component and KCV printed successfully.
+21:18:12.177 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:23:42.628 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:25:18.420 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:27:19.975 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:57:33.669 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:58:41.523 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:59:23.437 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+21:59:29.391 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:02:08.455 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:07:28.528 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:10:52.934 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:13:45.476 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:14:40.852 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:18:09.646 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:19:43.860 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:21:34.240 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:23:15.334 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:24:37.687 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:30:47.563 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+22:34:02.665 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:18:32.655 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:20:21.086 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+23:20:35.236 [JavaFX Application Thread] INFO  service.PrintService - Key Component and KCV printed successfully.
+23:20:35.238 [JavaFX Application Thread] INFO  service.PrintService - Versao
+01:43:42.617 [main] ERROR keygen.HsmGenerateKeyComponentApp - TESTE TESTE 2
+01:44:03.211 [JavaFX Application Thread] WARN  service.PrintService - Impressão cancelada pelo usuário.

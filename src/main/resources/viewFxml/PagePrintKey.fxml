@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrintPageController">
+   <children>
+      <Pane fx:id="headerPane" opacity="0.76" prefHeight="74.0" prefWidth="397.0" style="-fx-border-color: gray;">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="42.0" fitWidth="141.0" layoutX="140.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane fx:id="contentPane" prefHeight="186.0" prefWidth="421.0" style="-fx-border-color: black;">
+         <children>
+            <Text fx:id="printPageCompKeyText" layoutX="27.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPONENT KEY:" wrappingWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="printPageKCVText" layoutX="27.0" layoutY="78.0" stroke="WHITE" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KCV:" wrappingWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="printPageCompTypeText" layoutX="27.0" layoutY="107.0" stroke="WHITE" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPONENT TYPE:" wrappingWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</VBox>
